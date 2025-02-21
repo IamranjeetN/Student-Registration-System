@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header section here -->
+    <header>
+        <h1>Student Registration System</h1>
+        <p>Register student details and manage records efficiently.</p>
+    </header>
+    <!-- Creating student registration form -->
+    <section class="form-section">
+        <h2>Register a Student</h2>
+        <form id="studentForm">
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" required>
+            
+            <label for="studentID">Student ID:</label>
+            <input type="number" id="studentID" required>
+            
+            <label for="emailID">Email ID:</label>
+            <input type="email" id="emailID" required>
+            
+            <label for="contactNo">Contact No:</label>
+            <input type="number" id="contactNo" required>
+            
+            <button type="submit">Register</button>
+        </form>
+    </section>
+    <!-- Display section to view registered students -->
+    <section class="display-section">
+        <h2>Registered Students</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Student ID</th>
+                    <th>Email</th>
+                    <th>Contact No</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="studentTableBody">
+                <!-- Dynamic Student Records -->
+            </tbody>
+        </table>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
